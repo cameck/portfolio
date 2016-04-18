@@ -1,8 +1,4 @@
 /*General Styles */
-* {
-  text-decoration: none;
-}
-
 body {
   font-family: 'Ubuntu', sans-serif;
 }
@@ -61,9 +57,14 @@ article {
 }
 
 
-@media screen and (min-width: 1000px) {
-  .navbar-nav {
+
+@media screen and (min-width: 768px) {
+  .navbar-nav .nav-item:nth-child(3),
+  .navbar-nav .nav-item:nth-child(2) {
     float: right;
+  }
+  .navbar-nav .nav-item:first-child {
+    float: left;
   }
 }
 
@@ -85,11 +86,11 @@ svg {
 }
 
 .text-copy {
-  fill: none;
+  fill: transparent;
   stroke: white;
   stroke-dasharray: 7% 28%;
   stroke-width: .5em;
-  -webkit-animation: stroke-offset 7s infinite linear;
+  /*-webkit-animation: stroke-offset 7s infinite linear;*/
           animation: stroke-offset 7s infinite linear;
 }
 .text-copy:nth-child(1) {
@@ -113,12 +114,6 @@ svg {
   stroke-dashoffset: 35%;
 }
 
-@-webkit-keyframes stroke-offset {
-  50% {
-    stroke-dashoffset: 35%;
-    stroke-dasharray: 0 87.5%;
-  }
-}
 
 @keyframes stroke-offset {
   50% {
