@@ -90,8 +90,7 @@ svg {
   stroke: white;
   stroke-dasharray: 7% 28%;
   stroke-width: .5em;
-  /*-webkit-animation: stroke-offset 7s infinite linear;*/
-          animation: stroke-offset 7s infinite linear;
+  animation: stroke-offset 7s infinite linear;
 }
 .text-copy:nth-child(1) {
   stroke: #1B325F;
@@ -135,9 +134,7 @@ svg {
 #about-me p {
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   z-index: 1;
-  /*background: #F26C4F;*/
   padding: 1.25rem;
-  /*color: #ECF0F1;*/
   border-radius: 5px;
 }
 #about .card {
@@ -162,7 +159,6 @@ svg {
 
 .card-third {
   background: #9CC4E4;
-  /*background: #5bc0de;*/
   width: 100% !important;
 }
 
@@ -220,10 +216,7 @@ svg {
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   z-index: 1;
   padding: 1.25rem;
-  /*background: #1B325F;*/
   background: transparent;
-  /*background: #3A89C9;*/
-  /*color: #ECF0F1;*/
   border-radius: 5px;
 }
 form {
