@@ -1,0 +1,263 @@
+/*General Styles */
+* {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a .fa-github,
+a .fa-github:hover {
+  color: #333;
+}
+a .fa-twitter,
+a .fa-twitter:hover {
+  color: #55acee;
+}
+a .fa-linkedin,
+a .fa-linkedin:hover {
+  color: #0077b5;
+}
+a {
+  text-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  z-index: 1;
+  transition: all .5s;
+}
+
+a:active,
+a:hover {
+  z-index: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+  text-decoration: none;
+}
+
+a:active {
+  position: relative;
+  top: .09em;
+}
+
+article {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/*Navbar*/
+.navbar-fixed-top {
+  background: #F26C4F;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  z-index: 2;
+}
+.navbar a {
+  color: #ECF0F1;
+  font-size: 1.1rem;
+
+}
+.navbar-nav .nav-link {
+  padding-top: .125rem;
+  padding-bottom: .125rem;
+}
+
+
+@media screen and (min-width: 1000px) {
+  .navbar-nav {
+    float: right;
+  }
+}
+
+/*Hero Section*/
+#hero {
+  background: #3A89C9;
+  background-size: .12em 100%;
+  height: 100vh;
+}
+
+.text--line,
+.text--line2 {
+  font-size: 5em;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: .5em;
+  -webkit-animation: stroke-offset 7s infinite linear;
+          animation: stroke-offset 7s infinite linear;
+}
+.text-copy:nth-child(1) {
+  stroke: #1B325F;
+  stroke-dashoffset: 7%;
+}
+.text-copy:nth-child(2) {
+  stroke: #9CC4E4;
+  stroke-dashoffset: 14%;
+}
+.text-copy:nth-child(3) {
+  stroke: #E9F2F9;
+  stroke-dashoffset: 21%;
+}
+.text-copy:nth-child(4) {
+  stroke: #9CC4E4;
+  stroke-dashoffset: 28%;
+}
+.text-copy:nth-child(5) {
+  stroke: #F26C4F;
+  stroke-dashoffset: 35%;
+}
+
+@-webkit-keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%;
+  }
+}
+
+
+/*About Section*/
+
+#about {
+  background: #E9F2F9;
+  padding-top: 4%;
+  padding-bottom: 2%;
+
+}
+
+#about-me p {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  z-index: 1;
+  /*background: #F26C4F;*/
+  padding: 1.25rem;
+  /*color: #ECF0F1;*/
+  border-radius: 5px;
+}
+#about .card {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  z-index: 1;
+  border-width: 0;
+  width: 49%;
+  display: inline-block;
+}
+#about .card a {
+  color: #ECF0F1;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  z-index: 1.2;
+}
+
+.card-first {
+  background: #1B325F;
+}
+.card-second {
+  background: #F26C4F;
+}
+
+.card-third {
+  background: #9CC4E4;
+  /*background: #5bc0de;*/
+  width: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+  #about .card {
+    width: 100%;
+  }
+}
+/*Contact Section*/
+
+#contact {
+  background: #E9F2F9;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+@media screen and (max-width: 768px) {
+  #contact-data {
+    margin-top: 1.25rem;
+    padding: 0;
+  }
+}
+
+#contact .card {
+  background: #3A89C9;
+  background: transparent;
+  border-width: 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  z-index: 1;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+#contact .card-img-top {
+  padding-top: 2%;
+  border-radius: 50%;
+}
+
+#contact .card-title {
+  margin-bottom: 0;
+}
+#contact .card-block,
+#contact h1 {
+  text-align: center;
+}
+
+#contact .card p {
+  margin-bottom: .7rem;
+}
+#contact .card a {
+  color: #373a3c;
+}
+
+#contact-form {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  z-index: 1;
+  padding: 1.25rem;
+  /*background: #1B325F;*/
+  background: transparent;
+  /*background: #3A89C9;*/
+  /*color: #ECF0F1;*/
+  border-radius: 5px;
+}
+form {
+  margin: 0 auto;
+  width: 75%;
+}
+
+#contact .btn-primary {
+  background: #3A89C9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  border-color: transparent;
+  transition: all .9s;
+}
+
+#contact .btn-primary:hover {
+  border-color: transparent;
+  position: relative;
+  top: 0.1em;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+/*Footer*/
+
+#footer {
+  background: #F26C4F;
+  min-height: 3em;
+  color: #ECF0F1;
+
+}
+
+#footer p {
+  padding-top: 1em;
+}
