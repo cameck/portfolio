@@ -56,17 +56,14 @@ article {
   padding-bottom: .125rem;
 }
 
-
-
-@media screen and (min-width: 768px) {
-  .navbar-nav .nav-item:nth-child(3),
-  .navbar-nav .nav-item:nth-child(2) {
-    float: right;
-  }
-  .navbar-nav .nav-item:first-child {
-    float: left;
-  }
+.navbar-nav .nav-item:nth-child(3),
+.navbar-nav .nav-item:nth-child(2) {
+  float: right;
 }
+.navbar-nav .nav-item:first-child {
+  float: left;
+}
+
 
 /*Hero Section*/
 #hero {
