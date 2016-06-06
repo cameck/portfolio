@@ -24,7 +24,7 @@
   <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
   <link rel="icon"
       type="image/png"
-      href="img/favicon.png">
+      href="http://www.cameroneckelberry.com/wp-content/uploads/2016/06/favicon.png">
   <link rel="stylesheet" href="css/home.css" />
 </head>
 <body id="home">
@@ -69,7 +69,10 @@
         <h1>About Me</h1>
         <p>
           <!-- start slipsum code -->
-          Hello, my name is Cameron. I'm a full-stack Ruby on Rails Developer based in Florida. I'm proficient in       Ruby, Rails, HTML, CSS, WordPress and JavaScript. I'm looking to find a company with big goals that I can learn from and help make their goals a reality.
+          Hello, my name is Cameron. I'm a Junior Full-Stack Ruby on Rails Developer based in Florida.
+          I live in the St. Pete/Tampa Area in Florida.
+          It's hot here.
+
         </p>
       </article>
     </div>
@@ -80,9 +83,12 @@
         <div class="card card-inverse card-first text-xs-center">
           <div class="card-block">
             <blockquote class="card-blockquote">
-              <a href="https://github.com/cameck/Political-Directory-Creator" target="_blank">
-                <p>Ruby Political Directory Creator</p>
-                <footer>Fork it on<cite title="Source Title">Github</cite></footer></a>
+              <a href="http://emojisentiment.com/" target="_blank">
+                <p><span style="float: left">#EmojiSentiment</span>
+                  <sub style="bottom: -0.50em">
+                    <img src="http://www.cameroneckelberry.com/wp-content/uploads/2016/05/heat.png"
+                     alt="Emoji Heart" width="16" height="16" class="alignnone size-full wp-image-139" /></sub></p>
+                <footer>View it <cite title="Source Title">Here</cite></footer></a>
               </blockquote>
             </div>
           </div>
@@ -90,8 +96,8 @@
           <div class="card card-inverse card-second text-xs-center">
             <div class="card-block">
               <blockquote class="card-blockquote">
-                <a href="http://118degreesla.com/" target="_blank">
-                  <p>118 Degrees LA</p>
+                <a href="http://smip.co" target="_blank">
+                  <p>SMIP</p>
                   <footer>View it <cite title="Source Title">Here</cite></footer></a>
                 </blockquote>
               </div>
@@ -117,29 +123,16 @@
         <div class="col-md-6" id="contact-form">
           <form>
             <h3>Contact</h3>
-            <fieldset class="form-group">
-              <label for="formGroupExampleInput">Name:</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Jon Smith">
-            </fieldset>
-            <fieldset class="form-group">
-              <label for="formGroupExampleInput2">Email:</label>
-              <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="jon@apple.com">
-            </fieldset>
-            <fieldset class="form-group">
-              <label for="exampleTextarea">Message:</label>
-              <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-            </fieldset>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+            <?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 5 ); } ?>
         </div>
         <div class="col-md-6" id="contact-data">
 
 
           <div class="card">
-            <img class="card-img-top" src="img/cameron-square.jpg" alt="Card image cap">
+            <img class="card-img-top" src="http://www.cameroneckelberry.com/wp-content/uploads/2016/06/cameron-square.jpg" alt="Card image cap">
             <div class="card-block">
               <h4 class="card-title">Cameron Eckelberry</h4>
-              <h6>Full Stack Developer</h6>
+              <h6>Jr. Full Stack Developer</h6>
               <p>
                 <a href="mailto:me@cameroneckelberry.com" target="_blank">me@cameroneckelberry.com</a>
               </p>
@@ -152,7 +145,7 @@
 
         <footer>
           <p>
-            ©2016 Cameron Eckelberry - Full Stack Developer
+            ©<?php echo date("Y"); ?> Cameron Eckelberry - Full Stack Developer
           </p>
 
           <!-- jQuery first, then Bootstrap JS. -->
