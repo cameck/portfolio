@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 // Add smooth scrolling to all links
-jQuery("a").on('click', function(event) {
+jQuery(".anchor-link").on('click', function(event) {
 
 // Prevent default anchor click behavior
 event.preventDefault();

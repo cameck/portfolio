@@ -57,7 +57,8 @@ article {
 }
 
 .navbar-nav .nav-item:nth-child(3),
-.navbar-nav .nav-item:nth-child(2) {
+.navbar-nav .nav-item:nth-child(2),
+.navbar-nav .nav-item:nth-child(4) {
   float: right;
 }
 .navbar-nav .nav-item:first-child {
@@ -221,19 +222,60 @@ form {
   width: 75%;
 }
 
-#contact .btn-primary {
+#contact .btn-primary,
+#ninja_forms_field_10 {
   background: #3A89C9;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   border-color: transparent;
   transition: all .9s;
+  color: #fff;
+  width: 30%;
 }
 
-#contact .btn-primary:hover {
+#contact .btn-primary:hover,
+#ninja_forms_field_10:hover {
   border-color: transparent;
   position: relative;
   top: 0.1em;
   box-shadow: 0 1px 0 rgba(0,0,0,0.5);
 }
+
+.field-wrap {
+  margin-bottom: 1rem;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.ninja-forms-field {
+  width: 100%;
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  margin-bottom: 1rem;
+}
+
+#contact-header,
+.ninja-forms-response-msg {
+  width: 75%;
+  margin: 0 auto;
+}
+/* ---------------------------------
+HONEYPOT
+----------------------------------*/
+
+.hp-wrap,
+.ninja-forms-required-items,
+.honeypot-wrap {
+  display: none;
+}
+
 /*Footer*/
 
 #footer {
