@@ -188,6 +188,7 @@ svg {
   z-index: 1;
   text-align: center;
   padding: 1.25rem;
+  min-height: 440px;
 }
 
 #contact .card-img-top {
@@ -216,6 +217,7 @@ svg {
   padding: 1.25rem;
   background: transparent;
   border-radius: 5px;
+  min-height: 440px;
 }
 form {
   margin: 0 auto;

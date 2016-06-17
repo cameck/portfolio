@@ -133,7 +133,7 @@
 
 
           <div class="card">
-            <img class="card-img-top" src="http://www.cameroneckelberry.com/wp-content/uploads/2016/06/cameron-square.jpg" alt="Card image cap">
+            <img class="card-img-top" src="http://www.cameroneckelberry.com/wp-content/uploads/2016/06/optim_cameron_wedding_drawing.jpg" alt="Drawing of Cameron Eckelberry">
             <div class="card-block">
               <h4 class="card-title">Cameron Eckelberry</h4>
               <h6>Jr. Full Stack Developer</h6>
